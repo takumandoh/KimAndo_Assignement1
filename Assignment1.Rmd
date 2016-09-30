@@ -1,7 +1,9 @@
 ---
 title: "Assignment1"
 author: "Bomi and Andoh"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
