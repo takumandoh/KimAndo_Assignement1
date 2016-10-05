@@ -10,7 +10,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## data about Arrests in the US
+## First data about Arrests in the US
 
 We used data called "USArrests"" from R datasets to illustrate a variety of descriptive statistics.
 followings are the tables of data.
@@ -32,6 +32,13 @@ Apparently, the two variables are correlated.
 ```{r,include=TRUE}
 plot(USArrests$Murder, USArrests$Assault)
 ```
+
+Then, we try to predict the number of Murder by three variables; Assault, UrbanPop, and Rape.
+```{r,include=TRUE}
+reg1 <- lm(USArrests$Murder~USArrests$Assault + USArrests$UrbanPop + USArrests$Rape)
+summary(reg1)
+```
+
 
 ## Second data used is about Student Admissions at UC Berkeley - "UCBAdmissions"
 we used data from R core datasets to illustrate a variaty of discriptive statistics.
