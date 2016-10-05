@@ -1,1 +1,1 @@
-this is a very descriptive README.md
+The purpose of this repository is to test the attitude of R codes and markdown languages in GitHub.
