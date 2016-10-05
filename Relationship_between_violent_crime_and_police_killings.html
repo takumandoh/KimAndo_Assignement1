@@ -176,11 +176,7 @@ $(document).ready(function () {
 ## West Virginia     5.7      81       39  9.3
 ## Wisconsin         2.6      53       66 10.8
 ## Wyoming           6.8     161       60 15.6</code></pre>
-<<<<<<< HEAD
-<p>Followings are the means for each crime(Murder, Assault, UrbanPop, and Rape).</p>
-=======
 <p>Followings are the means for each crime(Murder, Assault, UrbanPop, and Rape) in all over the US.</p>
->>>>>>> origin/make-another-data-analysis
 <pre class="r"><code>mean(USArrests$Murder)</code></pre>
 <pre><code>## [1] 7.788</code></pre>
 <pre class="r"><code>mean(USArrests$Assault)</code></pre>
@@ -220,9 +216,61 @@ summary(reg1)</code></pre>
 <div id="second-data-used-is-about-student-admissions-at-uc-berkeley---ucbadmissions" class="section level2">
 <h2>Second data used is about Student Admissions at UC Berkeley - “UCBAdmissions”</h2>
 <p>we used data from R core datasets to illustrate a variaty of discriptive statistics. followings are variables and levels of data.</p>
-</div>
-<div id="there-are-cross-tabulating-4526-observations-on-3-variables.-the-variables-and-their-levels-are-as-follows" class="section level2">
-<h2>There are cross-tabulating 4526 observations on 3 variables. The variables and their levels are as follows:</h2>
+<p>There are cross-tabulating 4526 observations on 3 variables. The variables and their levels are as follows:</p>
+<p>No Name Levels 1 Admit Admitted, Rejected 2 Gender Male, Female 3 Dept A, B, C, D, E, F</p>
+<pre class="r"><code>prop.table(UCBAdmissions)</code></pre>
+<pre><code>## , , Dept = A
+## 
+##           Gender
+## Admit             Male      Female
+##   Admitted 0.113124171 0.019664163
+##   Rejected 0.069155988 0.004197967
+## 
+## , , Dept = B
+## 
+##           Gender
+## Admit             Male      Female
+##   Admitted 0.077993814 0.003756076
+##   Rejected 0.045735749 0.001767565
+## 
+## , , Dept = C
+## 
+##           Gender
+## Admit             Male      Female
+##   Admitted 0.026513478 0.044631021
+##   Rejected 0.045293858 0.086389748
+## 
+## , , Dept = D
+## 
+##           Gender
+## Admit             Male      Female
+##   Admitted 0.030490499 0.028943880
+##   Rejected 0.061643836 0.053910738
+## 
+## , , Dept = E
+## 
+##           Gender
+## Admit             Male      Female
+##   Admitted 0.011710119 0.020768891
+##   Rejected 0.030490499 0.066062749
+## 
+## , , Dept = F
+## 
+##           Gender
+## Admit             Male      Female
+##   Admitted 0.004860804 0.005302696
+##   Rejected 0.077551922 0.070039770</code></pre>
+<pre class="r"><code>ftable(round(prop.table(UCBAdmissions), 3), row.vars=&quot;Dept&quot;, col.vars = c(&quot;Gender&quot;, &quot;Admit&quot;))</code></pre>
+<pre><code>##      Gender     Male            Female         
+##      Admit  Admitted Rejected Admitted Rejected
+## Dept                                           
+## A              0.113    0.069    0.020    0.004
+## B              0.078    0.046    0.004    0.002
+## C              0.027    0.045    0.045    0.086
+## D              0.030    0.062    0.029    0.054
+## E              0.012    0.030    0.021    0.066
+## F              0.005    0.078    0.005    0.070</code></pre>
+<p>The following graph shows the aggregated Student admissions by comparing gender proportions over departments.</p>
 <pre class="r"><code>require(graphics)
 apply(UCBAdmissions, c(1,2), sum)</code></pre>
 <pre><code>##           Gender
