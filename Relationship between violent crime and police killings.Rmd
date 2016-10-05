@@ -3,8 +3,8 @@
 title: "relationship between violent crime and police killings"
 author: "Andoh and Bomi"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## R Markdown
 
-These are the histogram of USArrests.
+These are the histogram of USArrests and 4 others.
 
 ```{r hist(swiss$Examination)}
 hist(USArrests$Murder)
@@ -21,7 +21,7 @@ hist(USArrests$Rape)
 hist(USArrests$Assault)
 hist(USArrests$UrbanPop)
 ```
-<<<<<<< Updated upstream
+
 ```{r finding means}
 mean(USArrests$Murder)
 mean(USArrests$Assault)
