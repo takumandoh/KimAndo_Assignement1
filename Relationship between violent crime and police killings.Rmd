@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## R Markdown
 
-These are the histogram of USArrests.
+These are the histogram of USArrests and 4 others.
 
 ```{r hist(swiss$Examination)}
 hist(USArrests$Murder)
