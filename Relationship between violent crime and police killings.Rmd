@@ -12,29 +12,31 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## data about Arrests in the US
 
-These are the histograms and means of USArrests and 4 others.
+We use data called USArrests from R datasets to illustrate the situation of US crimes.
+followings are the table of data.
 
-```{r hist(swiss$Examination)}
-hist(USArrests$Murder)
-hist(USArrests$Rape)
-hist(USArrests$Assault)
-hist(USArrests$UrbanPop)
+```{r USArrests,include=TRUE}
+USArrests
 ```
 
-```{r finding means}
+Followings are the mean of each crimes(Murder, Assault, UrbanPop, and Rape).
+```{r, include=TRUE}
 mean(USArrests$Murder)
 mean(USArrests$Assault)
 mean(USArrests$UrbanPop)
 mean(USArrests$Rape)
-
 ```
 
-
+The following figure is plot of the number of Murder and the number of Assault.
+Apparently, the two variables are correlated.
+```{r,include=TRUE}
+plot(USArrests$Murder, USArrests$Assault)
+```
 ## data about occupations and comparisons between fathers and sons
 
 we used data from R core datasets to illustrate a variaty of discriptive statistics.
 followings are variables of data.
 
-```{}
+```{r,include=TRUE}
 names(occupationalStatus)
 ```
