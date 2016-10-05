@@ -19,7 +19,7 @@ followings are the tables of data.
 USArrests
 ```
 
-Followings are the means for each crime(Murder, Assault, UrbanPop, and Rape).
+Followings are the means for each crime(Murder, Assault, UrbanPop, and Rape) in all over the US.
 ```{r, include=TRUE}
 mean(USArrests$Murder)
 mean(USArrests$Assault)
