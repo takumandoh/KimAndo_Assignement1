@@ -43,6 +43,10 @@ summary(reg1)
 we used data from R core datasets to illustrate a variaty of discriptive statistics.
 followings are variables and levels of data.
 
+## There are cross-tabulating 4526 observations on 3 variables. The variables and their levels are as follows:
+```{r name and levels}
+```
+
 ```{r plots}
 require(graphics)
 apply(UCBAdmissions, c(1,2), sum)
