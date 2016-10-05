@@ -21,7 +21,13 @@ hist(USArrests$Rape)
 hist(USArrests$Assault)
 hist(USArrests$UrbanPop)
 ```
+```{r finding means}
+mean(USArrests$Murder)
+mean(USArrests$Assault)
+mean(USArrests$UrbanPop)
+mean(USArrests$Rape)
 
+```
 ## Including Plots
 
 You can also embed plots, for example:
