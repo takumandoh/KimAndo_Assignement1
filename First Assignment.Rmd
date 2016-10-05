@@ -1,9 +1,6 @@
 ---
-title: "relationship between violent crime and police killings"
-author: "Andoh and Bomi"
-Date: 5/10/2016
-  pdf_document: default
-  html_document: default
+title: "First Assignment"
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
@@ -16,8 +13,8 @@ This is an R Markdown document. Markdown is a simple formatting syntax for autho
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-```{r hist(swiss$Examination)}
-hist(swiss$Examination)
+```{r cars}
+summary(cars)
 ```
 
 ## Including Plots
