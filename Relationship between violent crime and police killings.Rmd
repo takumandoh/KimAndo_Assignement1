@@ -52,4 +52,3 @@ require(graphics)
 apply(UCBAdmissions, c(1,2), sum)
 mosaicplot(apply(UCBAdmissions, c(1,2), sum), main = "Student admissions at UC Berkeley")
 ```
-
