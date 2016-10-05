@@ -19,6 +19,7 @@ When you click the **Knit** button a document will be generated that includes bo
 
 ```{r hist(swiss$Examination)}
 hist(USArrests$Murder)
+hist(USArrests$Rape)
 ```
 
 ## Including Plots
