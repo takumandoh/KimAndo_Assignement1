@@ -40,13 +40,26 @@ summary(reg1)
 ```
 
 ## Second data used is about Student Admissions at UC Berkeley - "UCBAdmissions"
+
 we used data from R core datasets to illustrate a variaty of discriptive statistics.
 followings are variables and levels of data.
 
-## There are cross-tabulating 4526 observations on 3 variables. The variables and their levels are as follows:
-```{r name and levels}
+There are cross-tabulating 4526 observations on 3 variables. The variables and their levels are as follows:
+
+No	 Name	 Levels
+1	 Admit	 Admitted, Rejected
+2	 Gender	 Male, Female
+3	 Dept	 A, B, C, D, E, F
+
+```{r proportion table}
+prop.table(UCBAdmissions)
 ```
 
+```{r more readable format}
+ftable(round(prop.table(UCBAdmissions), 3), row.vars="Dept", col.vars = c("Gender", "Admit"))
+``` 
+
+The following graph shows the aggregated Student admissions by comparing gender proportions over departments.
 ```{r plots}
 require(graphics)
 apply(UCBAdmissions, c(1,2), sum)
