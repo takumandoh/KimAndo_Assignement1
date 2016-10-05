@@ -10,9 +10,9 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+## data about Arrests in the US
 
-These are the histogram of USArrests and 4 others.
+These are the histograms and means of USArrests and 4 others.
 
 ```{r hist(swiss$Examination)}
 hist(USArrests$Murder)
@@ -27,4 +27,14 @@ mean(USArrests$Assault)
 mean(USArrests$UrbanPop)
 mean(USArrests$Rape)
 
+```
+
+
+## data about occupations and comparisons between fathers and sons
+
+we used data from R core datasets to illustrate a variaty of discriptive statistics.
+followings are variables of data.
+
+```{}
+names(occupationalStatus)
 ```
