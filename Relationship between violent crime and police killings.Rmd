@@ -3,8 +3,8 @@
 title: "relationship between violent crime and police killings"
 author: "Andoh and Bomi"
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
