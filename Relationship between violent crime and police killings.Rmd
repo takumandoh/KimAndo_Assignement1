@@ -19,7 +19,7 @@ followings are the tables of data.
 USArrests
 ```
 
-Followings are the means for each crime(Murder, Assault, UrbanPop, and Rape).
+Followings are the means for each crime(Murder, Assault, UrbanPop, and Rape) in all over the US.
 ```{r, include=TRUE}
 mean(USArrests$Murder)
 mean(USArrests$Assault)
@@ -65,4 +65,3 @@ require(graphics)
 apply(UCBAdmissions, c(1,2), sum)
 mosaicplot(apply(UCBAdmissions, c(1,2), sum), main = "Student admissions at UC Berkeley")
 ```
-
