@@ -39,7 +39,6 @@ reg1 <- lm(USArrests$Murder~USArrests$Assault + USArrests$UrbanPop + USArrests$R
 summary(reg1)
 ```
 
-
 ## Second data used is about Student Admissions at UC Berkeley - "UCBAdmissions"
 we used data from R core datasets to illustrate a variaty of discriptive statistics.
 followings are variables and levels of data.
