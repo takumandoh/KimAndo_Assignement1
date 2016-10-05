@@ -2,13 +2,9 @@
 ---
 title: "relationship between violent crime and police killings"
 author: "Andoh and Bomi"
-<<<<<<< HEAD
 output:
-=======
-Date: 5/10/2016
->>>>>>> origin/master
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
