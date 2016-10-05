@@ -1,7 +1,8 @@
 ---
 title: "relationship between violent crime and police killings"
-author: "Andoh"
+author: "Andoh" 
 output:
+Date: 5/10/2016
   pdf_document: default
   html_document: default
 ---
