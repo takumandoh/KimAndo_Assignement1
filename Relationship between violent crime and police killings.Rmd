@@ -12,14 +12,14 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## data about Arrests in the US
 
-We use data called USArrests from R datasets to illustrate the situation of US crimes.
-followings are the table of data.
+We used data called "USArrests"" from R datasets to illustrate a variety of descriptive statistics.
+followings are the tables of data.
 
 ```{r USArrests,include=TRUE}
 USArrests
 ```
 
-Followings are the mean of each crimes(Murder, Assault, UrbanPop, and Rape).
+Followings are the means for each crime(Murder, Assault, UrbanPop, and Rape).
 ```{r, include=TRUE}
 mean(USArrests$Murder)
 mean(USArrests$Assault)
@@ -27,7 +27,7 @@ mean(USArrests$UrbanPop)
 mean(USArrests$Rape)
 ```
 
-The following figure is plot of the number of Murder and the number of Assault.
+The following figure is a plot of the number of Murder and the number of Assault.
 Apparently, the two variables are correlated.
 ```{r,include=TRUE}
 plot(USArrests$Murder, USArrests$Assault)
@@ -35,7 +35,7 @@ plot(USArrests$Murder, USArrests$Assault)
 
 ## Second data used is about Student Admissions at UC Berkeley - "UCBAdmissions"
 we used data from R core datasets to illustrate a variaty of discriptive statistics.
-followings are variables of data.
+followings are variables and levels of data.
 
 ```{r plots}
 require(graphics)
