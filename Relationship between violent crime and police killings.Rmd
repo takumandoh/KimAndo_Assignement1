@@ -30,11 +30,14 @@ mean(USArrests$Rape)
 ```
 
 
-## data about occupations and comparisons between fathers and sons
+## Second data used is about Student Admissions at UC Berkeley - "UCBAdmissions"
 
 we used data from R core datasets to illustrate a variaty of discriptive statistics.
 followings are variables of data.
 
-```{}
-names(occupationalStatus)
+```{r plots}
+require(graphics)
+apply(UCBAdmissions, c(1,2), sum)
+mosaicplot(apply(UCBAdmissions, c(1,2), sum), main = "Student admissions at UC Berkeley")
 ```
+
